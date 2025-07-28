@@ -70,3 +70,29 @@
 #next {
     right: 30px;
 }
+
+@keyframes toActiveOu {
+    from {
+        top:100%;
+        opacity: 0;
+    }
+}
+
+@keyframes toActiveRe {
+    from {
+        left:100%;
+        opacity: 0;
+    }
+}
+
+.item.item.active img.fruit {
+    animation: toActiveOu 2.25s ease-in-out 1;
+}
+
+.item.item.active .title {
+    animation: toActiveOu 1.75s ease-in-out 1;
+}
+
+.item.item.active img.refri {
+    animation: toActiveRe 1s ease-in-out 1;
+}
